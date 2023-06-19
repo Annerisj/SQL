@@ -1,0 +1,13 @@
+Create a clothing store database
+
+CREATE table clothing (id integer primary key, name text, quantity integer);
+INSERT INTO clothing VALUES (1, "Pants", 5);
+INSERT INTO clothing VALUES (2, "Shirts", 7);
+INSERT INTO clothing VALUES (3, "Jackets", 3);
+
+--display the clothing items ordered by quantity
+SELECT * FROM clothing;
+SELECT * FROM clothing WHERE quantity >=5 ORDER BY quantity desc;
+
+-- what is the sum of all items?
+SELECT SUM(quantity) FROM clothing
